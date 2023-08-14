@@ -1,0 +1,262 @@
+body {
+    /*background: linear-gradient(180deg, #789133, #00264d);*/
+    background: linear-gradient(217deg, #444444, #0d0d0d );
+    background-attachment: fixed;
+}
+#part1 img{
+    width: auto;
+    
+}
+#part2 {
+    /*background: linear-gradient(180deg, #789133, #00264d);*/
+    background: linear-gradient(217deg, #ffffff, #d6d6d6 );
+    background-attachment: fixed;
+}
+#part3 {
+    /*background: linear-gradient(180deg, #789133, #00264d);*/
+    background: linear-gradient(217deg, #444444, #0d0d0d );
+    background-attachment: fixed;
+    padding-left: 25vw;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+}
+#part4 {
+    /*background: linear-gradient(180deg, #789133, #00264d);*/
+    background: linear-gradient(217deg, #ffffff, #d6d6d6 );
+    background-attachment: fixed;
+    padding-left: 25vw;
+    padding-top: 12vh;
+    padding-right: 20vh;
+    padding-bottom: 20vh;
+    
+}
+#part5 {
+    /*background: linear-gradient(180deg, #789133, #00264d);*/
+    background: linear-gradient(217deg, #444444, #0d0d0d );
+    background-attachment: fixed;
+}
+#part6 {
+    /*background: linear-gradient(180deg, #789133, #00264d);*/
+    background: linear-gradient(217deg, #ffffff, #d6d6d6 );
+    background-attachment: fixed;
+}
+
+#contenu {
+    color: whitesmoke;
+    font-family: 'MuseoModerno', sans-serif;
+    padding-left: 25vw;
+    margin-right: 5vw ;
+    margin-top: 5vw;
+}
+
+
+ 
+#enTete {
+    display: flex;
+    font-size: small;
+}
+
+#photoMoi {
+    width: 12vw;
+    height: 35vh;
+}   
+#competences1{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#competences2{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+}
+
+#competences3{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+}
+
+
+
+#introduction {
+    padding-left: 2vw;
+
+}
+
+#coordonnees {
+    margin-left: 15vw;
+}
+
+
+nav {
+    position: fixed;
+    display: flex;
+
+}
+
+
+nav a {
+    flex-grow: 1;
+    height: 10vh;
+    font-size: larger;
+    text-decoration:none;
+    color:black;
+    border: 1px solid rgb(25, 25, 25);
+    margin: 5px 5px 5px 5px;
+    background-color: white;
+    padding: 15px;
+}
+
+nav ul li {
+    margin: 60px;
+}
+
+section{
+    font-size:x-large;
+}
+
+ul {
+    list-style-type: none;
+  }
+
+
+
+
+
+#part3 img{
+    border-radius: 50%;
+    width: 5vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+#part3{
+    display: flex;
+    text-align : center;
+    color: #b9b9b9;
+    font-size :x-small;
+    margin: 50px 50px 50px 50px;
+}
+
+
+
+#competences1{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#competences2{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+}
+
+#competences3{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+
+}
+
+#lettreDeMotivation{
+    text-align: left;
+    font-size: large;
+    
+}
+
+#menuLettres{
+    display: flex;
+    flex-direction: row;
+    padding-top: 5vh;
+}
+
+#menuLettres li{
+    flex-grow: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*frise chronologique importée*/
+  .history-tl-container{
+  width:50%;
+  margin:auto;
+  display:block;
+  position:relative;
+}
+.history-tl-container ul.tl{
+    margin:20px 0;
+    padding:0;
+    display:inline-block;
+
+}
+.history-tl-container ul.tl li{
+    list-style: none;
+    margin:auto;
+    margin-left:200px;
+    min-height:50px;
+    /*background: rgba(255,255,0,0.1);*/
+    border-left:1px dashed #86D6FF;
+    padding:0 0 50px 30px;
+    position:relative;
+}
+.history-tl-container ul.tl li:last-child{ border-left:0;}
+.history-tl-container ul.tl li::before{
+    position: absolute;
+    left: -18px;
+    top: -5px;
+    content: " ";
+    border: 8px solid rgba(255, 255, 255, 0.74);
+    border-radius: 500%;
+    background: #258CC7;
+    height: 20px;
+    width: 20px;
+    transition: all 500ms ease-in-out;
+
+}
+.history-tl-container ul.tl li:hover::before{
+    border-color:  #258CC7;
+    transition: all 1000ms ease-in-out;
+}
+ul.tl li .item-title{
+}
+ul.tl li .item-detail{
+    color:rgba(0,0,0,0.5);
+    font-size:12px;
+}
+ul.tl li .timestamp{
+    color: #8D8D8D;
+    position: absolute;
+  width:100px;
+    left: -50%;
+    text-align: right;
+    font-size: 12px;
+}
