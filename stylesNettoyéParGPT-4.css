@@ -1,0 +1,150 @@
+/* Réinitialisation des styles par défaut du navigateur */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles globaux pour le corps du document */
+body {
+    font-family: 'Montserrat', sans-serif;
+    /*background: linear-gradient(180deg, #789133, #00264d);*/
+    background: linear-gradient(217deg, #444444, #0d0d0d );
+    background-attachment: fixed;
+}
+
+/* Styles pour les liens */
+a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-weight : bold;
+}
+
+/* Styles pour l'image dans la partie 1 */
+#part1 img{
+    width: auto;
+}
+
+/* Styles pour les différentes parties du document */
+#part2, #part4, #part6 {
+    /*background: linear-gradient(180deg, #789133, #00264d);*/
+    background: linear-gradient(217deg, #ffffff, #d6d6d6 );
+    background-attachment: fixed;
+}
+
+#part3, #part5 {
+    /*background: linear-gradient(180deg, #789133, #00264d);*/
+    background: linear-gradient(217deg, #444444, #0d0d0d );
+    background-attachment: fixed;
+    padding-left: 25vw;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+}
+
+#part4 {
+    padding-top: 12vh;
+    padding-right: 20vh;
+}
+
+#part5 {
+    color: whitesmoke;
+    padding-bottom: 10vh;
+}
+
+/* Styles pour l'en-tête du contenu */
+#contenuEnTete {
+    color: whitesmoke;
+    padding-left: 25vw;
+    margin-right: 5vw ;
+    margin-top: 5vw;
+}
+
+/* Styles pour l'en-tête */
+#enTete {
+    display: flex;
+    font-size: small;
+}
+
+/* Styles pour la photo dans l'en-tête */
+#photoMoi {
+    width: 12vw;
+    height: 35vh;
+}   
+
+/* Styles pour les compétences */
+#competences1{
+    /* ... */
+}
+
+/* Styles pour la réalisation technique */
+#realisationTechniqueImage a {
+    flex: 0; /* Cela empêche le lien de prendre plus d'espace que nécessaire */
+}
+
+#realisationTechniqueTexte {
+    padding-left: 25vw;
+    padding-top: 15vh;
+}
+
+
+
+
+
+/*Frise chronologique importée...*/
+{
+    .history-tl-container{
+        width:50%;
+        margin:auto;
+        display:block;
+        position:relative;
+    }
+    .history-tl-container ul.tl{
+        margin:20px 0;
+        padding:0;
+        display:inline-block;
+    
+    }
+    .history-tl-container ul.tl li{
+        list-style: none;
+        margin:auto;
+        margin-left:200px;
+        min-height:50px;
+        /*background: rgba(255,255,0,0.1);*/
+        border-left:1px dashed #86D6FF;
+        padding:0 0 50px 30px;
+        position:relative;
+    }
+    .history-tl-container ul.tl li:last-child{ border-left:0;}
+    .history-tl-container ul.tl li::before{
+        position: absolute;
+        left: -18px;
+        top: -5px;
+        content: " ";
+        border: 8px solid rgba(255, 255, 255, 0.74);
+        border-radius: 500%;
+        background: #258CC7;
+        height: 20px;
+        width: 20px;
+        transition: all 500ms ease-in-out;
+    
+    }
+    .history-tl-container ul.tl li:hover::before{
+        border-color:  #258CC7;
+        transition: all 1000ms ease-in-out;
+    }
+    ul.tl li .item-title{
+    }
+    ul.tl li .item-detail{
+        color:rgba(0,0,0,0.5);
+        font-size:12px;
+    }
+    ul.tl li .timestamp{
+        color: #8D8D8D;
+        position: absolute;
+        width:100px;
+        left: -50%;
+        text-align: right;
+        font-size: 12px;
+    }
+}

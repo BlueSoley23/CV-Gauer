@@ -1,3 +1,8 @@
+/*  Code à nettoyer, rassembler les propriétés et les trier selon leur
+ordre dans le fichier HTML, regroupements selon les parties et ajout 
+commentaires sur tout le code, expliquant à chaque fois l'objectif 
+des propriétés et l'organisation de la feuille selon les parties */
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -29,6 +34,8 @@ a {
     padding-top: 20vh;
     padding-bottom: 20vh;
 }
+
+
 #part4 {
     /*background: linear-gradient(180deg, #789133, #00264d);*/
     background: linear-gradient(217deg, #ffffff, #d6d6d6 );
@@ -105,8 +112,9 @@ a {
 nav {
     position: fixed;
     display: flex;
-
+    left: 0; /* Ajoutez cette ligne */
 }
+
 
 
 nav a {
