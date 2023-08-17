@@ -4,160 +4,165 @@
 
 <!--En-tête HTML: Définition de la page et appels des autres fichiers.-->
 <head>
-    <meta charset="UTF-8">
-    <title>CV - Gauer Antoine</title>
-    <link rel="shortcut icon" type="image/png" href="./images/favicon.jpg"/>
+  <!-- Définition du codage des caractères -->
+  <meta charset="UTF-8">
+  <!-- Titre de la page -->
+  <title>CV - Gauer Antoine</title>
+  <!-- Lien vers l'icône de la page -->
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.jpg"/>
+  <!-- Lien vers le fichier CSS externe -->
+  <link rel="stylesheet" href="styles.css">
 
-<!--définition des media queries pour une page compatible avec tous les écrans.-->
-    <link rel="stylesheet" href="styles.css">
-
-    <script src="scripts/script.js" defer></script>
-<!--Définition de la police d'écriture-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100&display=swap" rel="stylesheet">
-</head>
+  <!--Définition de la police d'écriture-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  </head>
 
 <!--Section principale : c'est ici qu'est le contenu de la page, tout ce qui sera visible.-->
 <body>
 
-<!--En-tête de la page.-->
-    <header>
-        <nav>
-            <ul>
-              <li><a href="#part1" id="presentation">Présentation</a></li>
-              <li><a href="#part2" id="experiences">Éxpériences professionnelles</a></li>
-              <li><a href="#part3" id="competences">Compétences</a></li>
-              <li><a href="#part4" id="lettreMotivation">Lettres de motivation</a></li>
-              <li><a href="#part5" id="realisationTechnique">Réalisation technique</a></li>
-              <li><a href="#part6" id="espaceMessagerie">Espace messagerie</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!--En-tête de la page.-->
+  <header>
+    <!--Menu de navigation-->
+    <nav>
+      <!-- Liste des liens de navigation -->
+      <ul>
+        <li><a href="#part1" id="presentation">Présentation</a></li>
+        <li><a href="#part2" id="experiences">Éxpériences</a></li>
+        <li><a href="#part3" id="competences">Compétences</a></li>
+        <li><a href="#part4" id="lettreMotivation">Lettres de motivation</a></li>
+        <li><a href="#part5" id="realisationTechnique">Réalisation technique</a></li>
+        <li><a href="#part6" id="espaceMessagerie">Espace messagerie</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<!--Contenu principal.-->
-    <main>
+  <!--Contenu principal.-->
+  <main>
+    <!--Section CV-->
+    <section>
+      <!--Partie 1 = présentation-->
       <div id="part1">
-        <div id="contenu">
-        <div id="enTete">
+        <div id="contenuEnTete">
+          <div id="enTete">
             <br>
+            <!--En tête avec photo et coordonées-->
             <img src="./images/moi.jpg" alt="moi" id="photoMoi">
             <div id="introduction">
-                <h1>   Antoine Gauer</h1>
-                <h2>   23 ans - Permis AM (BSR)</h2>
+              <h1>   Antoine Gauer</h1>
+              <h2>   23 ans - Permis AM (BSR)</h2>
             </div>
             <div id="coordonnees">
-                <h2>mail : bluegauer@gmail.com</h2>
-                <h2>tel : 06 05 85 31 51</h2>
-                <h2>48 rue de cézérou - apt 10</h2>
-                <h2>31270 Cugnaux</h2>
+              <a href="mailto:bluegauer@gmail.com">mail : bluegauer@gmail.com</a><br><br>
+              <a href="tel:+33605853151">tel : 06 05 85 31 51</a><br><br>
+              <a href="https://goo.gl/maps/jiPJpALJiZf8M34A8">48 rue de cézérou - apt 10</a>
+              <h2>31270 Cugnaux</h2>
             </div>
           </div>
-        
 
-        <!--CV-->
-        <section>
-            <p id="presentation">Bonjour,<br><br>
-                Bienvenue sur mon CV intéractif !<br><br>
-                Je suis Antoine Gauer, un jeune étudiant en développement informatique et passionné.<br> Et cela depuis ma plus jeune adolescence ! J'adore la programmation mais je m'interesse aussi à l'électronique embarquée.<br> A part ça, j'ai obtenu un Bac STI2D (sciences techniques de l'industrie et du développement durable) spécialité informatique.
-                <br>Je suis un jeune dynamique, serieux et avec l'amour du travail bien fait. Vous trouverez plus d'informations à mon sujet en parcourant ce site.<br> J'espère qu'il vous offrira une bonne experience  utilisateur... <br><br><br>
-            </p>
-          
+          <!--Texte de présentation-->
+          <p id="presentation">Bonjour,<br><br>
+          Bienvenue sur mon CV intéractif !<br><br>
+          Je suis Antoine Gauer, un jeune étudiant en développement informatique et passionné.<br> Et cela depuis ma plus jeune adolescence ! J'adore la programmation mais je m'interesse aussi à l'électronique embarquée.<br> A part ça, j'ai obtenu un Bac STI2D (sciences techniques de l'industrie et du développement durable) spécialité informatique.
+          <br>Je suis un jeune dynamique, serieux et avec l'amour du travail bien fait. Vous trouverez plus d'informations à mon sujet en parcourant ce site.<br> J'espère qu'il vous offrira une bonne experience  utilisateur... <br><br><br>
+          </p>
+        </div>
       </div>
 
+      <!--Partie 2 = Frise CSS (importée) de mes éxperiences professionnelles-->
       <div id="part2">
-            <div class="history-tl-container">
-              <br><br><br><br><br>
-              <ul class="tl">
+        <div class="history-tl-container">
+          <br><br><br><br><br>
+          <ul class="tl">
 
-                <li class="tl-item" ng-repeat="item in retailer_history">
-                  <div class="timestamp">
-                    07/2017<br>08/2017
-                  </div>
-                  <div class="item-title">CDD - E.Leclerc - Kingersheim (68)</div>
-                  <div class="item-detail">Employé Libre Service</div>
-                </li>
-    
-                <li class="tl-item" ng-repeat="item in retailer_history">
-                  <div class="timestamp">
-                    12/2017<br>01/2018
-                  </div>
-                  <div class="item-title">CDD - E.Leclerc - Kingersheim (68)</div>
-                  <div class="item-detail">Employé Libre Service</div>
-                </li>
-                    
-                <li class="tl-item" ng-repeat="item in retailer_history">
-                  <div class="timestamp">
-                    02/2018<br>04/2018
-                  </div>
-                  <div class="item-title">CDD - Buffalo Grill - Pau (64)</div>
-                  <div class="item-detail">Plongeur</div>
-                </li>
-    
-                <li class="tl-item" ng-repeat="item in retailer_history">
-                  <div class="timestamp">
-                    06/2018<br>07/2018
-                  </div>
-                  <div class="item-title">CDD - Sushi Shop - Pau (64)</div>
-                  <div class="item-detail">Livreur en scooter</div>
-                </li>
-    
-                <li class="tl-item" ng-repeat="item in retailer_history">
-                  <div class="timestamp">
-                    08/2018<br>09/2018
-                   </div>
-                  <div class="item-title">CDD - Chez Titine - Moliets-et-Maa</div>
-                  <div class="item-detail">Plongeur</div>
-                </li>
-    
-                <li class="tl-item" ng-repeat="item in retailer_history">
-                  <div class="timestamp">
-                    09/2018<br>10/2023
-                  </div>
-                  <div class="item-title">Interim - Côtes et mer - Pau (64)</div>
-                  <div class="item-detail">Plongeur</div>
-                </li>
-    
-                <li class="tl-item" ng-repeat="item in retailer_history">
-                  <div class="timestamp">
-                    06/2018<br>01/2019
-                  </div>
-                  <div class="item-title">Indépendant - Uber Eats - Pau (64)</div>
-                   <div class="item-detail">Coursier à vélo</div>
-                </li>
-    
-                <li class="tl-item" ng-repeat="item in retailer_history">
-                  <div class="timestamp">
-                    03/2019<br>08/2023
-                  </div>
-                  <div class="item-title">Missions - Travail Alternatif Payé à la Journée - Toulouse (31)</div>
-                  <div class="item-detail">Espaces verts et peinture</div>
-                </li>
-    
-                <li class="tl-item" ng-repeat="item in retailer_history">
-                  <div class="timestamp">
-                     12/2021<br>12/2021
-                  </div>
-                  <div class="item-title">Intérim - Auchan - Montauban (82)</div>
-                   <div class="item-detail">Inventoriste</div>
-                </li>
-    
-                <li class="tl-item" ng-repeat="item in retailer_history">
-                  <div class="timestamp">
-                     12/2021<br>12/2021
-                  </div>
-                  <div class="item-title">Intérim - SoBio - Montauban (82)</div>
-                  <div class="item-detail">Inventoriste</div>
-                </li>
-            
-              </ul>
-            </div>
-      </div>
+            <li class="tl-item" ng-repeat="item in retailer_history">
+              <div class="timestamp">
+                07/2017<br>08/2017
+              </div>
+              <div class="item-title">CDD - E.Leclerc - Kingersheim (68)</div>
+              <div class="item-detail">Employé Libre Service</div>
+            </li>
 
+            <li class="tl-item" ng-repeat="item in retailer_history">
+              <div class="timestamp">
+                12/2017<br>01/2018
+              </div>
+              <div class="item-title">CDD - E.Leclerc - Kingersheim (68)</div>
+              <div class="item-detail">Employé Libre Service</div>
+            </li>
+                
+            <li class="tl-item" ng-repeat="item in retailer_history">
+              <div class="timestamp">
+                02/2018<br>04/2018
+              </div>
+              <div class="item-title">CDD - Buffalo Grill - Pau (64)</div>
+              <div class="item-detail">Plongeur</div>
+            </li>
+
+            <li class="tl-item" ng-repeat="item in retailer_history">
+              <div class="timestamp">
+                06/2018<br>07/2018
+              </div>
+              <div class="item-title">CDD - Sushi Shop - Pau (64)</div>
+              <div class="item-detail">Livreur en scooter</div>
+            </li>
+
+            <li class="tl-item" ng-repeat="item in retailer_history">
+              <div class="timestamp">
+                08/2018<br>09/2018
+               </div>
+              <div class="item-title">CDD - Chez Titine - Moliets-et-Maa</div>
+              <div class="item-detail">Plongeur</div>
+            </li>
+
+            <li class="tl-item" ng-repeat="item in retailer_history">
+              <div class="timestamp">
+                09/2018<br>10/2023
+              </div>
+              <div class="item-title">Interim - Côtes et mer - Pau (64)</div>
+              <div class="item-detail">Plongeur</div>
+            </li>
+
+            <li class="tl-item" ng-repeat="item in retailer_history">
+              <div class="timestamp">
+                06/2018<br>01/2019
+              </div>
+              <div class="item-title">Indépendant - Uber Eats - Pau (64)</div>
+               <div class="item-detail">Coursier à vélo</div>
+            </li>
+
+            <li class="tl-item" ng-repeat="item in retailer_history">
+              <div class="timestamp">
+                03/2019<br>08/2023
+              </div>
+              <div class="item-title">Missions - Travail Alternatif Payé à la Journée - Toulouse (31)</div>
+              <div class="item-detail">Espaces verts et peinture</div>
+            </li>
+
+            <li class="tl-item" ng-repeat="item in retailer_history">
+              <div class="timestamp">
+                 12/2021<br>12/2021
+              </div>
+              <div class="item-title">Intérim - Auchan - Montauban (82)</div>
+               <div class="item-detail">Inventoriste</div>
+            </li>
+
+            <li class="tl-item" ng-repeat="item in retailer_history">
+              <div class="timestamp">
+                 12/2021<br>12/2021
+              </div>
+              <div class="item-title">Intérim - SoBio - Montauban (82)</div>
+              <div class="item-detail">Inventoriste</div>
+            </li>
+        
+          </ul>
+        </div>
+  </div>
+
+
+      <!-- Partie 3 = Compétences -->
       <div id="part3">
+        <!-- Compétences 1 -->
         <div id="competences1">
-
-          
           <img src="./images/icones/entretien.png">
           <h2>Entretenir des locaux</h2>
           
@@ -169,10 +174,9 @@
             
           <img src="./images/icones/plats.png">
           <h2>Plats simples</h2>
-
-
         </div>
         
+        <!-- Compétences 2 -->
         <div id="competences2">
           <img src="./images/icones/inventaire.png">
           <h2>Inventaires en grandes surfaces</h2>
@@ -185,11 +189,10 @@
 
           <img src="./images/icones/sécurité.png">
           <h2>Règles de sécurité et d'hygiène</h2>
-
         </div>
 
+        <!-- Compétences 3 -->
         <div id="competences3">
-
           <img src="./images/icones/microcontrolleur.png">
           <h2>Programmation de micro-contrôleurs</h2>
           
@@ -201,45 +204,62 @@
 
           <img src="./images/icones/espagnol.png">
           <h2>Espagnol intermédiaire</h2>
-
         </div>
         
       </div>
 
+      <!-- Partie 4 = Lettres de motivation -->
       <div id="part4">
-        <p id="lettreDeMotivation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc id aliquam tincidunt, velit nunc tincidunt nunc, id lacinia nunc nunc id nunc. Sed euismod, mauris id consectetur tincidunt, velit nunc tincidunt nunc, id lacinia nunc nunc id nunc.<br> Sed euismod, mauris id consectetur tincidunt, velit nunc tincidunt nunc, id lacinia nunc nunc id nunc. Sed euismod, mauris id consectetur tincidunt, velit nunc tincidunt nunc, id lacinia nunc nunc id nunc. Sed euismod, mauris id consectetur tincidunt, velit nunc tincidunt nunc, id lacinia nunc nunc id nunc."<br>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc id aliquam tincidunt, velit nunc tincidunt nunc, id lacinia nunc nunc id nunc. Sed euismod, mauris id consectetur tincidunt, velit nunc tincidunt nunc, id lacinia nunc nunc id nunc. Sed euismod, mauris id consectetur tincidunt, velit nunc tincidunt nunc, id lacinia nunc nunc id nunc. Sed euismod, mauris id consectetur tincidunt, velit nunc tincidunt nunc, id lacinia nunc nunc id nunc. Sed euismod, mauris id consectetur tincidunt, velit nunc tincidunt nunc, id lacinia nunc nunc id nunc."<br>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc id aliquam tincidunt, velit nunc tincidunt nunc, id lacinia nunc nunc id nunc. Sed euismod, mauris id consectetur tincidunt, velit nunc tincidunt nunc, id lacinia nunc nunc id nunc. Sed euismod, mauris id consectetur tincidunt, velit nunc tincidunt nunc, id lacinia nunc nunc id nunc.""Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc id aliquam tincidunt, velit nunc tincidunt nunc, id lacinia nunc nunc id nunc. Sed euismod, mauris id consectetur tincidunt, velit nunc tincidunt nunc, id lacinia nunc nunc id nunc.<br> Sed euismod, mauris id consectetur tincidunt, velit nunc tincidunt nunc, id lacinia nunc nunc id nunc.<br> Sed euismod, mauris id consectetur tincidunt, velit nunc tincidunt nunc, id lacinia nunc nunc id nunc.<br> Sed euismod, mauris id consectetur tincidunt, velit nunc tincidunt nunc, id lacinia nunc nunc id nunc."<br>"Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Nullam auctor, nunc id aliquam tincidunt, velit nunc tincidunt nunc, id lacinia nunc nunc id nunc.<br> Sed euismod, mauris id consectetur tincidunt, velit nunc tincidunt nunc, id lacinia nunc nunc id nunc.<br> Sed euismod, mauris id consectetur tincidunt, velit nunc tincidunt nunc, id lacinia nunc nunc id nunc."</p>
-        
-      <ul id="menuLettres">
-        <button id="informatique">Cliquez-moi !</button><br>
-        <li><input type="button" value="Informatique" id=""/></li>
-        <li><input type="button" value="Restauration" id="restauration"/></li>
-        <li><input type="button" value="Grandes surfaces" id="grandesSurfaces"/></li>
-        <li><input type="button" value="Livraison" id="livraison"/></li>
-        <li><input type="button" value="Intérims" id="interims"/></li>
-      </ul>
+        <!-- Menu des lettres de motivation -->
+        <ul id="menuLettres">
+          <li><input type="button" value="Informatique" id="informatique"/></li>
+          <li><input type="button" value="Restauration" id="restauration"/></li>
+          <li><input type="button" value="Grandes surfaces" id="grandesSurfaces"/></li>
+          <li><input type="button" value="Livraison" id="livraison"/></li>
+          <li><input type="button" value="Intérims" id="interims"/></li>
+        </ul>
+        <!-- Texte de la lettre de motivation -->
+        <p class="lettreDeMotivation"><br><br><br><br><br><br>Lettres de motivation...<br><br><br>Cliquez sur le bouton de votre secteur d'activité ci-dessus afin de la visualiser.<br><br><br><br><br><br><br></p>
       </div>
+        
 
+
+      <!-- Partie 5 = Réalisation technique -->
       <div id="part5">
-
+        <div id="realisationTechniqueTexte">
+          <h1>Réalisation technique :</h1>
+          <h2>Projet de sonde thermique automatisée pour aquarium.</h2>
+          <p>Ce projet est constitué d'un écran, de boutons et d'un buzzer en guise d'interface. 
+          <br>Il fonctionne grace à l'AtMega 328P programmé en C++ avec des librairies pour la gestion 
+          des entrées et des sorties. La programmation se fait via la carte Arduino UNO que
+           j'utilise juste comme programmateur. C'est un projet que j'ai réalisé en 2017
+           pour ma soutenance de bac en spécialité informatique (Systèmes Informatique et Numériques). 
+          </p><br>
+        </div>
+        <div id="realisationTechniqueImage">
+          <h3>Cliquez sur l'image afin d'acceder au PDF technique du projet de sonde automatisée pour aquarium avec microcontrolleur...</h3>
+          <a href="files/realisationTechnique.pdf">
+          <img src="images/projetTech.jpg" alt="photo de la réalisation d'un aquarium automatisé">
+          </a>
+        </div>
       </div>
       
+      <!-- Partie 6 = Espace messagerie -->
       <div id="part6">
 
       </div>
       
-      
-            
-        </section>
-      </div>
-    </div>
-    </main>
+    </section>
+  </main>
 
-    <!--Le pied de la page (infos, contacts, résaux, copyright...)-->
-    <footer>
+  <!--Le pied de la page (infos, contacts, réseaux, copyright...)-->
+  <footer>
 
-    </footer>
-
+  </footer>
+  
+  <!-- Lien vers le fichier JavaScript externe -->
+  <script src="scripts/config.js" defer></script>
+  <script src="scripts/script.js" defer></script>
 </body>
 
-   </html>
-
+</html>
