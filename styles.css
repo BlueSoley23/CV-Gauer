@@ -243,16 +243,48 @@ ul {
     font-size: small;
 }
 
+#part6 {
+    display: flex;
+}
 
+#radiosSatisfaction input{
+   display: none;
+}
 
+#radiosSatisfaction img {
+    width: 2vw;
+}
 
+#formulaireSatisfaction {
+    display: flex;
+    flex-direction: column;
+}
 
+#formulaireMessagerie {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
 
+#radiosSatisfaction {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
 
+#blocMessagerie {
+    padding-top: 40vh;
+    padding-left: 25vw;
+    padding-bottom: 40vh;
+}
 
+#blocSatisfaction {
+    padding-top: 40vh;
+}
 
-
-
+#blocMessagerie textarea {
+    height: 11vh;
+}
 /*frise chronologique importée*/
   .history-tl-container{
   width:50%;

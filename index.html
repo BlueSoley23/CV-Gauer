@@ -250,21 +250,57 @@
       <div id="part6">
 
         <!--Formulaire "laisser un message..."-->
-        <h1>Laissez un message...</h1>
-        <form>
-          <label for="name">Nom de l'entreprise :</label>
-          <input type="text" id="nameEntreprise" name="nameEntreprise" placeholder="Nom de votre entreprise" required>
+        <div id="blocMessagerie">
+          <form>
+            <fieldset id="formulaireMessagerie">
+              <legend>Laissez un message...</legend>
 
-          <label for="name">Nom :</label>
-          <input type="text" id="name" name="name" placeholder="Votre nom (optionnel)">
+              <label for="name">Nom de l'entreprise :</label>
+              <input type="text" id="nameEntreprise" name="nameEntreprise" placeholder="Nom de votre entreprise" required>
 
-        </form>
-        
+              <label for="name">Nom :</label>
+              <input type="text" id="name" name="name" placeholder="Votre nom (optionnel)">
+
+              <label for="email">Adresse mail :</label>
+              <input type="email" id="email" name="email" placeholder="Votre mail" required>
+                
+              <label for="tel">Téléphone :</label>
+              <input type="tel" id="phone" name="tel" placeholder="Votre numéro de téléphone (optionnel)">
+
+              <label for="message">Message :</label>
+              <textarea id="message" name="messsage" placeholder="Votre message..." required></textarea>
+            </fieldset>
+          </form>
+        </div>
+          
         <!--Formulaire "satisfaction"-->
-        <form>
+        <div id="blocSatisfaction">
+          <form>
+            <fieldset id="formulaireSatisfaction">
+              <legend>Votre satisfaction (cliquez sur la miniature) :</legend>
 
-        </form>
+              <div id="radiosSatisfaction">
+                <label for="tresSatisfait"><img src="images/icones/tresSatisfait.png" alt="très satisfait">Très satisfait</label>
+                <input type="radio" id="tresSatisfait" name="satisfaction" value="5"  />
 
+                <label for="satisfait"><img src="images/icones/satisfait.png" alt="satisfait">Satisfait</label>
+                <input type="radio" id="satisfait" name="satisfaction" value="4"  />
+
+                <label for="moyennementSatisfait"><img src="images/icones/moyennementSatisfait.png" alt="moyennement satisfait">Moyennement satisfait</label>
+                <input type="radio" id="moyennementSatisfait" name="satisfaction" value="3"  />
+
+                <label for="peuSatisfait"><img src="images/icones/peuSatisfait.png" alt="peu satisfait">Peu satisafait</label>
+                <input type="radio" id="peuSatisfait" name="satisfaction" value="2"  />
+
+                <label for="insatisfait"><img src="images/icones/insatisfait.png" alt="insatisfait">Insatisfait</label>
+                <input type="radio" id="insatisfait" name="satisfaction" value="1"  />
+              </div>
+
+                <label for="message">Pourquoi ? :</label>
+                <textarea id="message" name="messsage" placeholder="Votre message (optionnel)..."></textarea>
+            </fieldset>
+          </form>
+        </div>
       </div>
       
     </section>
