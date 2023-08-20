@@ -15,6 +15,4 @@
         });
       }
 
-
-//Partie 5 : espace messagerie et satisfaction.
       
