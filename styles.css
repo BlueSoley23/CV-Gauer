@@ -1,21 +1,14 @@
-/*  Code à nettoyer, rassembler les propriétés et les trier selon leur
-ordre dans le fichier HTML, regroupements selon les parties et ajout 
-commentaires sur tout le code, expliquant à chaque fois l'objectif 
-des propriétés et l'organisation de la feuille selon les parties */
+/*   CODE CSS NÉTTOYÉ ET COMMENTÉ PAR GPT-4  - non fonctionnel*/
 
+/* Styles globaux */
+/* Le corps du document utilise la police Montserrat et a un fond dégradé fixe */
 body {
     font-family: 'Montserrat',sans-serif;
-}
-
-body {
     background: linear-gradient(217deg, #444, #0d0d0d);
     background-attachment: fixed;
 }
 
-#part1 img {
-    width: auto;
-}
-
+/* Tous les liens ont un style spécifique : pas de soulignement, police grande et grasse, et couleur blanche */
 a {
     text-decoration: none;
     font-size: large;
@@ -23,110 +16,70 @@ a {
     color: white;
 }
 
+/* Les listes non ordonnées n'ont pas de puces */
+ul {
+    list-style-type: none;
+}
+
+/* Styles de navigation */
+/* La barre de navigation est fixe et s'étend horizontalement */
+nav {
+    display: flex;
+    position: fixed;
+    left: 0;
+}
+
+/* Les liens de navigation s'étendent pour occuper tout l'espace disponible, ont une hauteur spécifique et une bordure */
+nav a {
+    flex-grow: 1;
+    height: 10vh;
+    margin: 5px;
+    padding: 15px;
+    border: 1px solid rgb(25,25,25);
+    background-color: white;
+    color: black;
+}
+
+/* Les éléments de liste de navigation ont une marge spécifique */
+nav ul li {
+    margin: 60px;
+}
+
+/* Styles de section */
+/* La taille de la police pour toutes les sections est extra-large */
+section {
+    font-size: x-large;
+}
+
+/* Styles pour #part1 */
+/* L'image dans #part1 a une largeur automatique */
+#part1 img {
+    width: auto;
+}
+
+/* Styles pour #part2 */
+/* #part2 a un fond dégradé fixe */
 #part2 {
     background: linear-gradient(217deg, #fff, #d6d6d6);
     background-attachment: fixed;
 }
 
+/* Styles pour #part3 */
+/* #part3 est un conteneur flex avec des marges, du rembourrage, du texte centré, une petite taille de police, une couleur spécifique et un fond dégradé fixe */
 #part3 {
+    display: flex;
+    margin: 50px;
     padding-top: 20vh;
     padding-bottom: 20vh;
     padding-left: 25vw;
+    text-align: center;
+    font-size: x-small;
+    color: #b9b9b9;
     background: linear-gradient(217deg, #444, #0d0d0d);
     background-attachment: fixed;
 }
 
-#part4 {
-    padding: 12vh 20vh 20vh 25vw;
-    background: linear-gradient(217deg, #fff, #d6d6d6);
-    background-attachment: fixed;
-}
-
-#part5 {
-    padding-bottom: 10vh;
-    color: whitesmoke;
-    background: linear-gradient(217deg, #444, #0d0d0d);
-    background-attachment: fixed;
-}
-
-#part6 {
-    background: linear-gradient(217deg, #fff, #d6d6d6);
-    background-attachment: fixed;
-}
-
-#contenuEnTete {
-    margin-top: 5vw;
-    margin-right: 5vw;
-    padding-left: 25vw;
-    color: whitesmoke;
-}
-
-#enTete {
-    display: flex;
-    font-size: small;
-}
-
-#photoMoi {
-    width: 12vw;
-    height: 35vh;
-}
-
-#competences1 {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-#competences2 {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-#competences3 {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-#introduction {
-    padding-left: 2vw;
-}
-
-#coordonnees {
-    margin-left: 15vw;
-}
-
-nav {
-    display: flex;
-    position: fixed;
-    left: 0; /* Ajoutez cette ligne */
-}
-
-nav a {
-    flex-grow: 1;
-    height: 10vh;
-    margin: 5px 5px 5px 5px;
-    padding: 15px;
-    border: 1px solid rgb(25,25,25);
-    text-decoration: none;
-    font-size: larger;
-    color: black;
-    background-color: white;
-}
-
-nav ul li {
-    margin: 60px;
-}
-
-section {
-    font-size: x-large;
-}
-
-ul {
-    list-style-type: none;
-}
-
+/* L'image dans #part3 est centrée et a une largeur spécifique et des coins arrondis */
 #part3 img {
     display: block;
     width: 5vw;
@@ -135,144 +88,16 @@ ul {
     border-radius: 50%;
 }
 
-#part3 {
-    display: flex;
-    margin: 50px 50px 50px 50px;
-    text-align: center;
-    font-size: x-small;
-    color: #b9b9b9;
-}
-
-#competences1 {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-#competences2 {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-#competences3 {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-.lettreDeMotivation {
-    text-align: left;
-    font-size: large;
-}
-
-#menuLettres {
-    display: flex;
-    flex-direction: row;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-}
-
-#menuLettres li {
-    flex-grow: 1;
-}
-
-#menuLettres input {
-    width: 10vw;
-    height: 5vh;
-    color: antiquewhite;
-    background-color: #2a2a2a;
-}
-
-#part5 img {
-    width: 25vw;
-}
-
-#realisationTechniqueImage {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#realisationTechniqueImage h3 {
-    flex: 1; /* Cela permet au texte de prendre tout l'espace disponible */
-    padding-right: 5vw;
-    padding-left: 25vw;
-    text-align: right; /* Cela aligne le texte à droite */
-}
-
-#realisationTechniqueImage a {
-    flex: 0; /* Cela empêche le lien de prendre plus d'espace que nécessaire */
-}
-
-#realisationTechniqueTexte {
-    padding-top: 15vh;
-    padding-left: 25vw;
-}
-
-#part6 label {
-    font-size: small;
-}
-
-#part6 {
-    display: flex;
-}
-
-#radiosSatisfaction input {
-    display: none;
-}
-
-#radiosSatisfaction img {
-    width: 2vw;
-}
-
-#formulaireSatisfaction {
-    display: flex;
-    flex-direction: column;
-}/*  Code à nettoyer, rassembler les propriétés et les trier selon leur
-ordre dans le fichier HTML, regroupements selon les parties et ajout 
-commentaires sur tout le code, expliquant à chaque fois l'objectif 
-des propriétés et l'organisation de la feuille selon les parties */
-
-body {
-    font-family: 'Montserrat',sans-serif;
-}
-
-body {
-    background: linear-gradient(217deg, #444, #0d0d0d);
-    background-attachment: fixed;
-}
-
-#part1 img {
-    width: auto;
-}
-
-a {
-    text-decoration: none;
-    font-size: large;
-    font-weight: bold;
-    color: white;
-}
-
-#part2 {
-    background: linear-gradient(217deg, #fff, #d6d6d6);
-    background-attachment: fixed;
-}
-
-#part3 {
-    padding-top: 20vh;
-    padding-bottom: 20vh;
-    padding-left: 25vw;
-    background: linear-gradient(217deg, #444, #0d0d0d);
-    background-attachment: fixed;
-}
-
+/* Styles pour #part4 */
+/* #part4 a un rembourrage spécifique (12% de la hauteur de la fenêtre en haut, 20% en bas et à droite, 25% à gauche) et un fond dégradé fixe. */
 #part4 {
     padding: 12vh 20vh 20vh 25vw;
     background: linear-gradient(217deg, #fff, #d6d6d6);
     background-attachment: fixed;
 }
 
+/* Styles pour #part5 */
+/* #part5 a un rembourrage en bas (10% de la hauteur de la fenêtre), une couleur de texte spécifique (whitesmoke) et un fond dégradé fixe. */
 #part5 {
     padding-bottom: 10vh;
     color: whitesmoke;
@@ -280,303 +105,109 @@ a {
     background-attachment: fixed;
 }
 
-#part6 {
-    background: linear-gradient(217deg, #fff, #d6d6d6);
-    background-attachment: fixed;
-}
-
-#contenuEnTete {
-    margin-top: 5vw;
-    margin-right: 5vw;
-    padding-left: 25vw;
-    color: whitesmoke;
-}
-
-#enTete {
-    display: flex;
-    font-size: small;
-}
-
-#photoMoi {
-    width: 12vw;
-    height: 35vh;
-}
-
-#competences1 {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-#competences2 {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-#competences3 {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-#introduction {
-    padding-left: 2vw;
-}
-
-#coordonnees {
-    margin-left: 15vw;
-}
-
-nav {
-    display: flex;
-    position: fixed;
-    left: 0; /* Ajoutez cette ligne */
-}
-
-nav a {
-    flex-grow: 1;
-    height: 10vh;
-    margin: 5px 5px 5px 5px;
-    padding: 15px;
-    border: 1px solid rgb(25,25,25);
-    text-decoration: none;
-    font-size: larger;
-    color: black;
-    background-color: white;
-}
-
-nav ul li {
-    margin: 60px;
-}
-
-section {
-    font-size: x-large;
-}
-
-ul {
-    list-style-type: none;
-}
-
-#part3 img {
-    display: block;
-    width: 5vw;
-    margin-right: auto;
-    margin-left: auto;
-    border-radius: 50%;
-}
-
-#part3 {
-    display: flex;
-    margin: 50px 50px 50px 50px;
-    text-align: center;
-    font-size: x-small;
-    color: #b9b9b9;
-}
-
-#competences1 {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-#competences2 {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-#competences3 {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-.lettreDeMotivation {
-    text-align: left;
-    font-size: large;
-}
-
-#menuLettres {
-    display: flex;
-    flex-direction: row;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-}
-
-#menuLettres li {
-    flex-grow: 1;
-}
-
-#menuLettres input {
-    width: 10vw;
-    height: 5vh;
-    color: antiquewhite;
-    background-color: #2a2a2a;
-}
-
+/* Styles pour l'image dans #part5 */
+/* L'image dans #part5 a une largeur spécifique (25% de la largeur de la fenêtre) */
 #part5 img {
     width: 25vw;
 }
 
+/* Styles pour #part6 */
+/* #part6 utilise flexbox pour aligner ses enfants et a un fond dégradé fixe */
+#part6 {
+    display: flex;
+    background: linear-gradient(217deg, #fff, #d6d6d6);
+    background-attachment: fixed;
+}
+
+/* Styles pour #realisationTechniqueImage */
+/* #realisationTechniqueImage utilise flexbox pour aligner ses enfants horizontalement et les espacer uniformément */
 #realisationTechniqueImage {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+/* Styles pour le titre dans #realisationTechniqueImage */
+/* Le titre dans #realisationTechniqueImage prend tout l'espace disponible et est aligné à droite */
 #realisationTechniqueImage h3 {
-    flex: 1; /* Cela permet au texte de prendre tout l'espace disponible */
+    flex: 1;
     padding-right: 5vw;
     padding-left: 25vw;
-    text-align: right; /* Cela aligne le texte à droite */
-}
-
-#realisationTechniqueImage a {
-    flex: 0; /* Cela empêche le lien de prendre plus d'espace que nécessaire */
-}
-
-#realisationTechniqueTexte {
-    padding-top: 15vh;
-    padding-left: 25vw;
-}
-
-#part6 label {
-    font-size: small;
-}
-
-#part6 {
-    display: flex;
-}
-
-#radiosSatisfaction input {
-    display: none;
-}
-
-#radiosSatisfaction img {
-    width: 2vw;
-}
-
-#formulaireSatisfaction {
-    display: flex;
-    flex-direction: column;
-}
-
-#formulaireMessagerie {
-    display: flex;
-    flex-direction: column;
-    width: 30vw;
-}
-
-#radiosSatisfaction {
-    display: flex;
-    flex-direction: column;
-    width: 30vw;
-}
-
-#blocMessagerie {
-    padding-top: 40vh;
-    padding-bottom: 40vh;
-    padding-left: 25vw;
-}
-
-#blocSatisfaction {
-    padding-top: 40vh;
-}
-
-#blocMessagerie textarea {
-    height: 11vh;
-}
-
-/*frise chronologique importée*/
-
-.history-tl-container {
-    display: block;
-    position: relative;
-    width: 50%;
-    margin: auto;
-}
-
-.history-tl-container ul.tl {
-    display: inline-block;
-    margin: 20px 0;
-    padding: 0;
-}
-
-.history-tl-container ul.tl li {
-    position: relative;
-    margin: auto;
-    margin-left: 200px;
-    padding: 0 0 50px 30px;
-    min-height: 50px;
-    border-left: 1px dashed #86D6FF;
-    list-style: none;
-}
-
-.history-tl-container ul.tl li:last-child {
-    border-left: 0;
-}
-
-.history-tl-container ul.tl li::before {
-    content: " ";
-    position: absolute;
-    top: -5px;
-    left: -18px;
-    width: 20px;
-    height: 20px;
-    border: 8px solid rgba(255, 255, 255, 0.74);
-    border-radius: 500%;
-    background: #258CC7;
-    transition: all 500ms ease-in-out;
-}
-
-.history-tl-container ul.tl li:hover::before {
-    border-color: #258CC7;
-    transition: all 1000ms ease-in-out;
-}
-
-ul.tl li .item-title {
-}
-
-ul.tl li .item-detail {
-    font-size: 12px;
-    color: rgba(0,0,0,0.5);
-}
-
-ul.tl li .timestamp {
-    position: absolute;
-    left: -50%;
-    width: 100px;
     text-align: right;
-    font-size: 12px;
-    color: #8D8D8D;
-}
-    flex-direction: column;
-    width: 30vw;
 }
 
+/* Styles pour le lien dans #realisationTechniqueImage */
+/* Le lien dans #realisationTechniqueImage n'occupe pas plus d'espace que nécessaire */
+#realisationTechniqueImage a {
+    flex: 0;
+}
+
+/* Styles pour #realisationTechniqueTexte */
+/* #realisationTechniqueTexte a un rembourrage en haut et à gauche */
+#realisationTechniqueTexte {
+    padding-top: 15vh;
+    padding
+    /* .timestamp est positionné absolument, aligné à droite, a une largeur spécifique, une petite taille de police et une couleur spécifique */
+    ul.tl li .timestamp {
+        position: absolute;
+        left: -50%;
+        width: 100px;
+        text-align: right;
+        font-size: 12px;
+        color: #8D8D8D;
+    }-left: 25vw;
+}
+
+/* Styles pour les labels dans #part6 */
+/* Les labels dans #part6 ont une petite taille de police */
+#part6 label {
+    font-size: small;
+}
+
+/* Styles pour les inputs dans #radiosSatisfaction */
+/* Les inputs dans #radiosSatisfaction sont cachés */
+#radiosSatisfaction input {
+    display: none;
+}
+
+/* Styles pour les images dans #radiosSatisfaction */
+/* Les images dans #radiosSatisfaction ont une largeur spécifique */
+#radiosSatisfaction img {
+    width: 2vw;
+}
+
+/* Styles pour #formulaireSatisfaction, #formulaireMessagerie, #radiosSatisfaction */
+/* #formulaireSatisfaction, #formulaireMessagerie, #radiosSatisfaction utilisent flexbox pour aligner leurs enfants verticalement et ont une largeur spécifique */
+#formulaireSatisfaction,
+#formulaireMessagerie,
 #radiosSatisfaction {
     display: flex;
     flex-direction: column;
     width: 30vw;
 }
 
+/* Styles pour #blocMessagerie */
+/* #blocMessagerie a un rembourrage en haut, en bas et à gauche */
 #blocMessagerie {
     padding-top: 40vh;
     padding-bottom: 40vh;
     padding-left: 25vw;
 }
 
+/* Styles pour #blocSatisfaction */
+/* #blocSatisfaction a un rembourrage en haut */
 #blocSatisfaction {
     padding-top: 40vh;
 }
 
+/* Styles pour les textarea dans #blocMessagerie */
+/* Les textarea dans #blocMessagerie ont une hauteur spécifique */
 #blocMessagerie textarea {
     height: 11vh;
 }
 
-/*frise chronologique importée*/
-
+/* Styles pour la frise chronologique importée */
+/* Le conteneur de la frise chronologique est centré sur la page */
 .history-tl-container {
     display: block;
     position: relative;
@@ -584,12 +215,16 @@ ul.tl li .timestamp {
     margin: auto;
 }
 
+/* Styles pour la liste dans la frise chronologique */
+/* La liste dans la frise chronologique est affichée horizontalement */
 .history-tl-container ul.tl {
     display: inline-block;
     margin: 20px 0;
     padding: 0;
 }
 
+/* Styles pour les éléments de liste dans la frise chronologique */
+/* Les éléments de liste dans la frise chronologique sont positionnés relativement, ont une marge spécifique, un rembourrage et une bordure à gauche */
 .history-tl-container ul.tl li {
     position: relative;
     margin: auto;
@@ -600,10 +235,14 @@ ul.tl li .timestamp {
     list-style: none;
 }
 
+/* Styles pour le dernier élément de liste dans la frise chronologique */
+/* Le dernier élément de liste dans la frise chronologique n'a pas de bordure à gauche */
 .history-tl-container ul.tl li:last-child {
     border-left: 0;
 }
 
+/* Styles pour le pseudo-élément before des éléments de liste dans la frise chronologique */
+/* Le pseudo-élément before des éléments de liste dans la frise chronologique crée un cercle avant chaque élément de liste */
 .history-tl-container ul.tl li::before {
     content: " ";
     position: absolute;
@@ -617,11 +256,17 @@ ul.tl li .timestamp {
     transition: all 500ms ease-in-out;
 }
 
+/* Styles pour le pseudo-élément before des éléments de liste dans la frise chronologique lors du survol */
+/* Le pseudo-élément before des éléments de liste dans la frise chronologique change de couleur de bordure lors du survol */
 .history-tl-container ul.tl li:hover::before {
     border-color: #258CC7;
     transition: all 1000ms ease-in-out;
 }
 
+/* Styles pour .item-title, .item-detail, .timestamp dans la frise chronologique */
+/* .item-title n'a pas de styles spécifiques */
+/* .item-detail a une petite taille de police et une couleur semi-transparente */
+/* .timestamp est positionné absolument et aligné à droite */
 ul.tl li .item-title {
 }
 
@@ -630,6 +275,7 @@ ul.tl li .item-detail {
     color: rgba(0,0,0,0.5);
 }
 
+/* .timestamp est positionné absolument, aligné à droite, a une largeur spécifique, une petite taille de police et une couleur spécifique */
 ul.tl li .timestamp {
     position: absolute;
     left: -50%;
